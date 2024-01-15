@@ -3,7 +3,11 @@
     <style name="Base.Theme.InterestingPlaces" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="statusBarBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">#100F0F</item>
+
     </style>
 
     <style name="Theme.InterestingPlaces" parent="Base.Theme.InterestingPlaces" />
+
 </resources>

@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "ru.aapodomatko.interestingplaces"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ru.aapodomatko.interestingplaces"
@@ -27,6 +27,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    buildFeatures {
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
