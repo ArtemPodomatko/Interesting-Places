@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -68,4 +69,7 @@ dependencies {
     // Glide
     implementation("com.github.bumptech.glide:glide:4.13.0")
     kapt("com.github.bumptech.glide:compiler:4.13.0")
+
+    //ImageSlider
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
 }

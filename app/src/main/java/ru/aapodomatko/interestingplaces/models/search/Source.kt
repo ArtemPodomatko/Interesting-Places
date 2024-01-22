@@ -1,4 +1,4 @@
-package ru.aapodomatko.interestingplaces.models
+package ru.aapodomatko.interestingplaces.models.search
 
 data class Source(
     val link: String,

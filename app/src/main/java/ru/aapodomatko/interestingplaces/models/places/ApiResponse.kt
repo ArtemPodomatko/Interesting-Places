@@ -1,4 +1,4 @@
-package ru.aapodomatko.interestingplaces.models
+package ru.aapodomatko.interestingplaces.models.places
 
 data class ApiResponse(
     val count: Int,
