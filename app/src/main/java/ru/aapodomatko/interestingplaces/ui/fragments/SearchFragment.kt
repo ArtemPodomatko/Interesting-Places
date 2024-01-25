@@ -47,6 +47,13 @@ class SearchFragment : Fragment() {
                     viewModel.searchAll(query)
                 }
                 viewModel.searchResponse.observe(viewLifecycleOwner) {
+                    if (it.isNotEmpty()) {
+                        mBinding.searchPreview.visibility = View.GONE
+                        mBinding.searchRecyclerView.visibility = View.VISIBLE
+                    } else {
+                        mBinding.searchPreview.visibility = View.VISIBLE
+                        mBinding.searchRecyclerView.visibility = View.GONE
+                    }
                     searchAdapter.differ.submitList(it)
                 }
                 return true

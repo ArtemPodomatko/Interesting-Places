@@ -3,4 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_screen_btn">#176FF2</color>
+    <color name="tabTextColor">#B8B8B8</color>
+    <color name="tabRippleColor">#D8F4F4</color>
+    <color name="tabIndicatorColor">#15F2F8</color>
+    <color name="description_viewpager_bg">#F5F6F6</color>
+    <color name="favorite_preview">#B8B8B8</color>
+    <color name="app_logo">#3C3535</color>
+    <color name="outlineSpotShadowColor">#186FF3</color>
+    <color name="description_icon_back">#F3F8FE</color>
+    <color name="text_on_image_slider_bg">#4D5652</color>
+    <color name="icon_your_favorite_count">#D3B9B9</color>
 </resources>

@@ -1,0 +1,25 @@
+<vector android:height="15dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="15dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="512" android:endY="256"
+                android:startX="-0" android:startY="256" android:type="linear">
+                <item android:color="#FFF67950" android:offset="0"/>
+                <item android:color="#FFF15A29" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M256,469.33c-117.63,0 -213.33,-95.7 -213.33,-213.33c0,-117.63 95.7,-213.33 213.33,-213.33c117.64,0 213.33,95.7 213.33,213.33C469.33,373.63 373.64,469.33 256,469.33z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="469.33" android:endY="256"
+                android:startX="42.67" android:startY="256" android:type="linear">
+                <item android:color="#FFF15A29" android:offset="0"/>
+                <item android:color="#FFF67950" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillAlpha="0.3" android:fillColor="#FF000000"
+        android:pathData="M381.5,174.61h-45.67v-21.6c0,-4.97 -4.03,-9 -9,-9H201.17c-4.97,0 -9,4.03 -9,9v21.6h-45.67v10h20.96l22.75,183.55c1.12,9.04 8.8,15.83 17.91,15.83h111.76c9.11,0 16.79,-6.79 17.91,-15.83l22.75,-183.55h20.96V174.61zM221.09,351.96l-9.93,-129.52l9.97,-0.76l9.93,129.52L221.09,351.96zM269,351.58h-10V222.05h10V351.58zM306.91,351.96l-9.97,-0.76l9.93,-129.52l9.97,0.76L306.91,351.96z" android:strokeAlpha="0.3"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M373.5,166.61h-45.67v-21.6c0,-4.97 -4.03,-9 -9,-9H193.17c-4.97,0 -9,4.03 -9,9v21.6h-45.67v10h20.96l22.75,183.55c1.12,9.04 8.8,15.83 17.91,15.83h111.76c9.11,0 16.79,-6.79 17.91,-15.83l22.75,-183.55h20.96V166.61zM213.09,343.96l-9.93,-129.52l9.97,-0.76l9.93,129.52L213.09,343.96zM261,343.58h-10V214.05h10V343.58zM298.91,343.96l-9.97,-0.76l9.93,-129.52l9.97,0.76L298.91,343.96z"/>
+</vector>

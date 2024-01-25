@@ -13,7 +13,7 @@ interface KudaGoService {
         @Query("fields") fields: String,
         @Query("location") location: String,
         @Query("page_size") pageSize: Int,
-        @Query("categories") categories: String
+        @Query("categories") categories: String,
     ) : Response<ApiResponse>
 
     @GET("public-api/v1.4/search")

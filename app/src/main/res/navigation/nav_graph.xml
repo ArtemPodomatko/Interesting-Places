@@ -28,13 +28,23 @@
         <argument
             android:name="result"
             app:argType="ru.aapodomatko.interestingplaces.models.places.Result" />
+        <action
+            android:id="@+id/action_descriptionFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
 
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="ru.aapodomatko.interestingplaces.ui.fragments.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="ru.aapodomatko.interestingplaces.ui.fragments.SearchFragment"
@@ -43,5 +53,15 @@
         <action
             android:id="@+id/action_searchFragment_to_favoriteFragment"
             app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.aapodomatko.interestingplaces.ui.fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+
+        <argument
+            android:name="coords"
+            app:argType="ru.aapodomatko.interestingplaces.models.places.Result" />
     </fragment>
 </navigation>

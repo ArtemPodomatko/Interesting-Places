@@ -1,9 +1,7 @@
 <resources>
-    <string name="app_name">InterestingPlaces</string>
+    <string name="app_name" translatable="false">InterestingPlaces</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="logo">Interesting Places \nApp</string>
-    <string name="new_places_spb">Не знаешь куда сходить? \nУзнай больше \nОб интересных местах \nПетербурга</string>
+    <string name="logo" translatable="false">Kuda GO</string>
     <string name="popular">Популярные</string>
     <string name="recommended">Рекомедованные</string>
     <string name="place_gallery">Галерея места:</string>
@@ -16,4 +14,12 @@
     <string name="topbar_search">Поиск</string>
     <string name="topbar_favorite">Нравится</string>
     <string name="description_information">Информация:</string>
+    <string name="show_map_btn">Показать на карте</string>
+    <string name="show_place_on_map">Посмотреть на карте</string>
+    <string name="yours_favorite">Вам понравилось</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="favorite_preview">Тут будут находиться все интересные места, \nкоторые вам понравились \nПока что тут пусто…</string>
+    <string name="search_preview">Ищите любые места, \nсобытия, новости\n Если хотите узнать \nкакие выставки доступны \nв Петербурге, просто \nнапишите \'\'выставка\'\'</string>
+    <string name="splash_logo_spb">санкт-петербург</string>
+    <string name="interesting_place_decsription">Интересное место</string>
 </resources>

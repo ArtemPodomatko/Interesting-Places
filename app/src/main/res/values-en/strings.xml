@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">InterestingPlaces</string>
+    <string name="logo">Kuda GO</string>
+    <string name="popular">popular</string>
+    <string name="recommended">Recommended</string>
+    <string name="place_gallery">Gallery of the place:</string>
+    <string name="go_site">Go to the website</string>
+    <string name="address">Address</string>
+    <string name="site">Website</string>
+    <string name="timetable">Work schedule</string>
+    <string name="subway">underground</string>
+    <string name="topbar_ineresting">Interesting</string>
+    <string name="topbar_search">Search</string>
+    <string name="topbar_favorite">Like</string>
+    <string name="description_information">Information:</string>
+    <string name="show_map_btn">Show on the map</string>
+    <string name="show_place_on_map">View on the map</string>
+    <string name="yours_favorite">you like it</string>
+    <string name="btn_delete">Delete</string>
+    <string name="favorite_preview">Тут будут находиться все интересные места, \nкоторые вам понравились \nПока что тут пусто…</string>
+    <string name="search_preview">Look for any places, \nevents, news\n If you want to know  \nwhich exhibitions are available \nin St. Petersburg, just \nwrite \'\'exhibition\'\'</string>
+    <string name="splash_logo_spb">saint-petersburg</string>
+</resources>

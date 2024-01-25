@@ -11,9 +11,9 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabTextColor="#B8B8B8"
-        app:tabRippleColor="#D8F4F4"
-        app:tabIndicatorColor="#15F2F8"
+        app:tabTextColor="@color/tabTextColor"
+        app:tabRippleColor="@color/tabRippleColor"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
         app:tabSelectedTextColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tab_layout">
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"

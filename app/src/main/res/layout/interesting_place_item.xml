@@ -6,7 +6,7 @@
     android:layout_margin="10dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="20dp"
-    android:outlineSpotShadowColor="#186FF3"
+    android:outlineSpotShadowColor="@color/outlineSpotShadowColor"
     android:elevation="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +32,19 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                android:contentDescription="@string/interesting_place_decsription" />
+
+            <TextView
+                android:id="@+id/icon_delete_favorite_item"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_dustbin_bg"
+                android:elevation="1dp"
+                android:layout_marginStart="138dp"
+                android:paddingHorizontal="1dp"
+                android:layout_marginTop="5dp"
+                app:drawableStartCompat="@drawable/icon_minus" />
 
         </androidx.cardview.widget.CardView>
 
@@ -44,6 +56,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/place_card_view"
             app:layout_constraintStart_toStartOf="@id/place_card_view"/>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

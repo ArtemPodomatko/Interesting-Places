@@ -1,10 +1,14 @@
 package ru.aapodomatko.interestingplaces.models.places
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
+@Entity(tableName = "places")
 data class Result(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val images: ArrayList<Image>,
     val slug: String,
     val title: String,
@@ -18,5 +22,7 @@ data class Result(
     val timetable: String?,
     @SerializedName("foreign_url")
     val foreignUrl: String?,
-    val subway: String?
+    val subway: String?,
+    val coords: Coords?,
+    var isLiked: Boolean = false
 ) : Serializable

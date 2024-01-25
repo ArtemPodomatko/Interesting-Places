@@ -75,6 +75,7 @@ class MainFragment : Fragment() {
                 super.onPageSelected(position)
                 handler.removeCallbacks(runnable)
                 handler.postDelayed(runnable, 5000)
+
             }
         })
 
@@ -82,6 +83,7 @@ class MainFragment : Fragment() {
         viewModel.interestingPlacesLiveData.observe(viewLifecycleOwner) {
             interestingPlacesAdapter.differ.submitList(it)
             imageSliderAdapter.differ.submitList(it.filter { it.favoriteCount > 100 })
+
         }
     }
 
@@ -113,7 +115,7 @@ class MainFragment : Fragment() {
     }
 
     private fun initAdapter() {
-        interestingPlacesAdapter = InterestingPlacesAdapter()
+        interestingPlacesAdapter = InterestingPlacesAdapter(isFavoriteFragment = false)
         mBinding.interestingPlacesRecyclerView.apply {
             adapter = interestingPlacesAdapter
             layoutManager = GridLayoutManager(requireContext(), 2)
@@ -132,8 +134,6 @@ class MainFragment : Fragment() {
             clipChildren = false
             getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
         }
-
-
     }
 
 

@@ -35,8 +35,9 @@ class MainActivity : AppCompatActivity() {
         navController = navHost.findNavController()
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.descriptionFragment) {
+            if (destination.id == R.id.descriptionFragment || destination.id == R.id.mapsFragment) {
                 mBinding.tabLayout.visibility = View.GONE
+
             } else {
                 mBinding.tabLayout.visibility = View.VISIBLE
             }

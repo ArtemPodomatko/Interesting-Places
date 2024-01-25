@@ -18,7 +18,7 @@ class MainFragmentViewModel @Inject constructor(private val repository: Retrofit
 
     init {
         getPlacesList(
-            fields = "id,title,address,timetable,phone,short_title,slug,images,description,foreign_url,subway,favorites_count",
+            fields = "id,title,address,timetable,phone,short_title,slug,images,description,foreign_url,subway,favorites_count,coords",
             location = "spb",
             pageSize = 40,
             categories = "sights",

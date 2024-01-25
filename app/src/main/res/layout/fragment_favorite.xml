@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.FavoriteFragment">
 
+    <TextView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yours_favorite"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/favorite_items_count"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/favorite"
+        app:layout_constraintTop_toTopOf="@id/favorite"
+        android:background="@drawable/your_favorite_count_bg"
+        android:elevation="1dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/circular"
+        app:layout_constraintBottom_toBottomOf="@id/favorite"/>
+
+
+    <TextView
+        android:id="@+id/favorite_preview"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:textColor="@color/favorite_preview"
+        android:gravity="center"
+        android:fontFamily="@font/circular"
+        android:lineSpacingExtra="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/favorite_preview"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
