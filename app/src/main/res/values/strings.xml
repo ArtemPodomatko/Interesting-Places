@@ -22,4 +22,5 @@
     <string name="search_preview">Ищите любые места, \nсобытия, новости\n Если хотите узнать \nкакие выставки доступны \nв Петербурге, просто \nнапишите \'\'выставка\'\'</string>
     <string name="splash_logo_spb">санкт-петербург</string>
     <string name="interesting_place_decsription">Интересное место</string>
+    <string name="developed_by_artem_podomatko">developed by Artem Podomatko</string>
 </resources>
