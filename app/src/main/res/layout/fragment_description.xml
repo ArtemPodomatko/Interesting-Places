@@ -22,7 +22,6 @@
             <ImageView
                 android:id="@+id/description_place_image"
                 android:layout_width="match_parent"
-                android:src="@drawable/app_logo_new"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 />
