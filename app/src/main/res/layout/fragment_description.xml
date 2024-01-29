@@ -60,7 +60,7 @@
             <ImageView
                 android:id="@+id/icon_like_red"
                 android:layout_width="25dp"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:layout_height="25dp"
                 android:layout_marginStart="370dp"
                 android:layout_marginTop="210dp"
