@@ -45,6 +45,16 @@
             app:layout_constraintEnd_toEndOf="@id/app_logo"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="@font/circular"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/developed_by_artem_podomatko"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
